@@ -1,35 +1,26 @@
 .header {
-    width:100%;
-    height:12vh;
     display: flex;
-}
-p{
-    font-size: 2vh;
-}
-.img_17{
-    height: 9vh;
-    width: auto;
-    position: relative;
-    top: 0vh;
-    left: 2vh;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-.one{
-    font-size: 2vh;
-    margin-left: auto;
-}
-.two{
-    font-size: 2vh;
-    margin-left: auto;
-}
-@media (max-width:767px){
-    .img_17{
-        height: auto;
-        width: 13vw;
-        position: relative;
-        top: 0.2vh;
-        left: 2vh;
-    }
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
 }
 
+.logo {
+    font-size: 1.5em;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 5px;
+}
+
+.login-btn, .signup-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
