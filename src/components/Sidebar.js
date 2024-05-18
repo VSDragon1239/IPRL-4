@@ -1,20 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import '../css/Sidebar.css';
+import { NavLink } from 'react-router-dom';
+// import {Button} from "react-bootstrap";
 
-function Sidebar() {
+function Sidebar({ isOpen }) {
     return (
-        <aside className="sidebar">
-            <NavLink to="/" exact activeClassName="active">Главная</NavLink>
-            <NavLink to="/gallery" activeClassName="active">Галерея</NavLink>
-            <NavLink to="/projects" activeClassName="active">Проекты</NavLink>
-            <NavLink to="/portfolio" activeClassName="active">Портфолио</NavLink>
-            <NavLink to="/templates" activeClassName="active">Шаблоны</NavLink>
-            <NavLink to="/training" activeClassName="active">Обучение</NavLink>
-            <NavLink to="/achievements" activeClassName="active">Достижения</NavLink>
-            <NavLink to="/profile" activeClassName="active">Профиль</NavLink>
+        <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
+            <NavLink to="/" className="sidebar-item" title="Домой">🏠 {isOpen && <span>Домой</span>}</NavLink>
+            <NavLink to={"/favorites"} className="sidebar-item" title="Избранное" >⭐ {isOpen && <span>Избранное</span>}</NavLink>
         </aside>
     );
 }
 
 export default Sidebar;
+
+
