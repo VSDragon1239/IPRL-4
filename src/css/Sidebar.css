@@ -5,19 +5,20 @@
 }
 
 .sidebar.closed {
-    width: 50px;
+    width: max-content;
 }
 
 .sidebar.open {
-    width: 200px;
+    width: max-content;
 }
 
 .sidebar-item {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 32px;
     text-decoration: none;
     color: white;
+    font-size: 24px;
 }
 
 .sidebar-item span {

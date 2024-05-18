@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import AppRoutes from './routes/AppRoutes';
 import Header from './components/Header';
@@ -18,15 +18,15 @@ function App() {
 
     return (
         <AuthProvider>
-            <Router>
+            <BrowserRouter>
                 <div className="App">
                     <Header toggleSidebar={toggleSidebar}/>
-                    <Sidebar />
+                    <Sidebar isOpen={isSidebarOpen} />
                     <main>
                         <AppRoutes />
                     </main>
                 </div>
-            </Router>
+            </BrowserRouter>
         </AuthProvider>
     );
 }
