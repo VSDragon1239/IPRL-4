@@ -1,0 +1,91 @@
+.REG {
+    background-color: rgb(221, 223, 235);
+    width:100%;
+    height: 65rem;
+    position: relative;
+    top:2%;
+    box-sizing: border-box;
+
+}
+.REG img{
+    width: 65%;
+    height: 75%;
+    position: relative;
+    left:10vh;
+    top:5vh;
+}
+
+.REG p.text {
+    font-size: 1.9em;
+    text-align: center;
+}
+.REG form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top:0%;
+    margin-top: 0%;
+    left: 4%;
+}
+.l{
+    font-size: 1.5em;
+    display: block;
+}
+.REG form input[type="text"],
+.REG form input[type="email"],
+.REG form input[type="password"] {
+    width: 110%;
+    height: 5vh;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+.REG form input[type="submit"] {
+    background-color: rgb(60, 90, 92);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 10%;
+    height: 6vh;
+    position: relative;
+    left:-8%;
+}
+.REG form input[type="submit"]:hover {
+    background-color: rgb(80, 110, 112);
+    text-decoration: underline;
+}
+@media (max-width:767px){
+    .REG {
+        background-color: rgb(221, 223, 235);
+        width:100;
+        height: 120vh;
+        position: relative;
+        top:10vh;
+        box-sizing: border-box;
+    }
+    .REG .three,.four {
+        width: 80vw;
+        height: 4vh;
+        position: relative;
+        left:-45%
+    }
+    .REG img{
+        width: 65vw;
+        height: auto;
+        position: relative;
+        left:6vw;
+        top:3vh;
+    }
+    .REG p.text {
+        font-size: 1.0em;
+    }
+    .REG form{
+        position: relative;
+        top:42vh;
+        left:-15vw;
+    }
+}

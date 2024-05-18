@@ -1,0 +1,35 @@
+.header {
+    width:100%;
+    height:12vh;
+    display: flex;
+}
+p{
+    font-size: 2vh;
+}
+.img_17{
+    height: 9vh;
+    width: auto;
+    position: relative;
+    top: 0vh;
+    left: 2vh;
+    display: flex;
+    align-items: center;
+}
+.one{
+    font-size: 2vh;
+    margin-left: auto;
+}
+.two{
+    font-size: 2vh;
+    margin-left: auto;
+}
+@media (max-width:767px){
+    .img_17{
+        height: auto;
+        width: 13vw;
+        position: relative;
+        top: 0.2vh;
+        left: 2vh;
+    }
+}
+
