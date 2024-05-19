@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import '../css/Header.css'; // Подключаем стили для Header
 import ProfileIcon from "../images/account.png"
+import SidebarHeaderButton from "../images/sidebar-button.png"
+import MessengerHeaderLink from "../images/messenger.png"
 
 function Header({ toggleSidebar }) {
     const { isAuth, setIsAuth } = useAuth();
@@ -28,7 +30,9 @@ function Header({ toggleSidebar }) {
     return (
         <header className="header">
             <div className="header-button-theme-toggle header-block-1">
-                <button className="icon-button color-button-sidebar" onClick={toggleSidebar}>☰</button>
+                <button className="icon-button color-button-sidebar" onClick={toggleSidebar}>
+                    <img src={SidebarHeaderButton} alt=""/>
+                </button>
             </div>
             <div className="header-block-2">
                 <div className="logo">
@@ -41,7 +45,9 @@ function Header({ toggleSidebar }) {
                     <div className="links">
                         {isAuth ? (
                             <>
-                                <Link to="/messengers" className="messenger-margin-right icon-links header-btn">✉</Link>
+                                <Link to="/profile/messengers" className="messenger-margin-right icon-links header-btn">
+                                    <img src={MessengerHeaderLink} alt=""/>
+                                </Link>
                                 <div
                                     className="profile-dropdown"
                                     onMouseEnter={handleMouseEnter}
