@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Jura";
+    src: url("./fonts/Jura.ttf");
+}
+
+.login {
+    position: absolute;
+    top: 0; /* Положение от верхнего края */
+    left: 0; /* Положение от левого края */
+    width: 100%; /* Ширина 100% */
+    height: 100%; /* Высота 100% */
+    display: flex; /* Используем Flexbox */
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    color: white;
+}
+
+.login-Background-image {
+    position: absolute;
+    background-image: url("../images/profile/background.png");
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+/*ФОН ДЛЯ ФОРМЫ И ОСНОВНОЙ КАРТИНКИ СБОКУ*/
+.login-Main-Block-Background-image {
+    position: absolute;
+    top: 0; /* Положение от верхнего края */
+    left: 0; /* Положение от левого края */
+    width: 100%; /* Ширина 100% */
+    height: 100%; /* Высота 100% */
+    display: flex; /* Используем Flexbox */
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    z-index: -1;
+}
+
+.login-Main-Background-image {
+    display: flex;
+    background-color: rgb(16, 133, 151);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    width: 884px;
+    height: 840px;
+    box-sizing: border-box;
+}
+
+
+
+.login-Main-Block {
+    display: flex;
+}
+/*ОСНОВНАЯ КАРТИНКА СБОКУ*/
+.login-Main-Image {
+    padding: 160px;
+    background-color: blue;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+/*ОСНОВНАЯ ФОРМА*/
+.login-Main-Form {
+    display: flex;
+    height: 788px;
+    width: 487px;
+    background-color: rgb(58, 58, 58);
+    padding: 10px;
+    flex-direction: column;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.login-Main-Text {
+    background-color: rgb(58, 58, 58);
+    padding: 0 150px;
+    margin: 0;
+    border: 6px solid rgb(196, 196, 196);
+    border-radius: 15px;
+}
+.login-Main-Text h1 {
+    margin: 10px 0;
+}
+
+
+input {
+    font-size: 24px;
+    width: 375px;
+    height: 42px;
+}
+.login-input p {
+
+    margin: 40px 0px 5px 10px;
+}
+
+.login-Inputs-Block {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-WithOut-input-grid {
+    display: grid;
+    grid-template-columns: auto auto auto; /* Три колонки одинаковой ширины */
+    grid-gap: 10px; /* Отступы между ячейками */
+    margin: 69px 0 0 0;
+
+}
+
+.element-login {
+    background-color: #f1f1f1; /* Цвет фона ячеек */
+    padding: 20px; /* Отступы внутри ячеек */
+    text-align: center; /* Выравнивание текста по центру */
+    width: 40px;
+    height: 40px;
+}
+
+.login-Buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+}
+/*КНОПКА ВХОДА*/
+.login-Button {
+    font-family: "Jura";
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 255, 246);
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    height: 64px;
+    width: 376px;
+}
+
+/*КНОПКА ПЕРЕХОДА НА РЕГИСТРАЦИЮ*/

@@ -1,0 +1,12 @@
+.register-Main-Text {
+    background-color: rgb(58, 58, 58);
+    padding: 0 67px;
+    margin: 0;
+    border: 6px solid rgb(196, 196, 196);
+    border-radius: 15px;
+}
+
+.register-Main-Text h1 {
+
+    margin: 10px 0;
+}

@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    background-color: #222;
     color: #fff;
     border-radius: 10px;
 }
@@ -18,10 +17,16 @@
 }
 .color-button-sidebar {
     background-color: rgb(0, 136, 172);
+    border-color: rgb(0, 136, 172);
 
+}
+.color-button-sidebar img {
+    width: 64px;
+    height: 64px;
 }
 .color-button-theme {
     background-color: rgb(0, 147, 194);
+    border-color: rgb(0, 147, 194);
 
 }
 
@@ -44,19 +49,20 @@
     color: blue;
 }
 
-
+/*Поиск, кнопки с аккаунтами и другое*/
 .header-block-3 {
     display: flex;
     align-items: center;
     background-color: rgba(0, 147, 194, 30%);
     color: #fff;
     border-radius: 10px;
+    box-sizing: border-box;
+
 }
 .search-bar {
-    padding: 12px;
-    font-size: 14px;
+    padding: 0;
+    font-size: 24px;
     margin-left: 20px;
-    border: none;
     border-radius: 3px;
 
 }
@@ -66,13 +72,24 @@
     align-items: center;
     background-color: rgb(0, 147, 194);
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 12px;
+    width: 1238px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.icon-links:hover {
+    background-color: rgb(1, 63, 139);
+}
+
+.icon-links:active {
+    background-color: rgb(1, 40, 96);
 }
 
 .links {
     display: flex;
     justify-content: end;
-    margin-left: 38vw;
+    margin-left: 0;
 }
 
 .icon-links {
@@ -144,7 +161,7 @@
     position: absolute;
     background-color: #333;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 

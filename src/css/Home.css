@@ -1,5 +1,5 @@
 .home {
-    padding: 20px;
+    padding: 0 0 0 10px;
 }
 
 .filter-bar {
@@ -8,6 +8,11 @@
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 419px));
+    gap: 10px;
+    height: 300px;
+}
+
+.project-card {
+    height: 300px;
 }

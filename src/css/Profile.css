@@ -1,0 +1,58 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+
+/*ОБЩИЙ СТИЛЬ ПРОФИЛЯ кроме низа*/
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/*ОБЩИЙ СТИЛЬ ПРОФИЛЯ + РАЗМЕЩЕНИЕ*/
+.user-icon-text-block {
+    position: absolute;
+    display: flex;
+    left: 20px;
+    bottom: 20px;
+}
+/*Фоновая картинка и скругление ЕСЛИ ОТКРЫТ Sidebar*/
+.profile-banner-1 {
+    width: 1552px;
+    height: 277px;
+    border-radius: 10px;
+}
+/*Если нет...*/
+.profile-banner-2 {
+    width: 1835px;
+    height: 277px;
+    border-radius: 10px;
+}
+/*Иконка пользователя*/
+.profile-picture {
+    width: 128px;
+    height: 128px;
+    border-radius: 10px;
+
+}
+
+/*НИК И @user*/
+.user-names {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+
+
+
+/*СПИСОК ДЕЙСТВИЙ*/
+.profile-sidebar {
+    display: flex;
+}
