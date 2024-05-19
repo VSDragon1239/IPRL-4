@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Routes, Route, Navigate, useLocation, matchPath} from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import Home from '../pages/Home';
 import Profile from '../pages/Profile';
 // import ProfileHome from '../pages/Profile/ProfileHome';
 // import Gallery from '../pages/Profile/Gallery';
@@ -125,3 +124,5 @@ const AppRoutes = () => {
 };
 
 export default AppRoutes
+
+
