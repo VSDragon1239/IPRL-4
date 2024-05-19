@@ -6,7 +6,7 @@ import homeImage from "../images/home.png"
 import FavoritesImage from "../images/favorites.png"
 
 function Sidebar({ isOpen }) {
-<<<<<<< HEAD
+
     return (
         <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
             <NavLink to="/" className="sidebar-item" title="Главная">
@@ -15,8 +15,7 @@ function Sidebar({ isOpen }) {
                 </div>
                 {isOpen && <span>Главная</span>}
             </NavLink>
-=======
->>>>>>> newReverseBranch
+
 
     const location = useLocation();
     const isProfilePage = !!matchPath({ path: '/profile/*', end: false }, location.pathname);
@@ -72,5 +71,7 @@ function Sidebar({ isOpen }) {
 }
 
 export default Sidebar;
+
+
 
 
