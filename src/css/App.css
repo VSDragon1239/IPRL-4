@@ -1,9 +1,16 @@
 .App {
     display: flex;
     flex-direction: column;
+    background-color: rgb(1, 63, 139);
 }
 
 main {
     flex-grow: 1;
     padding: 20px;
+}
+
+.App-Sidebar-main-flex {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
 }

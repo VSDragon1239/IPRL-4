@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import '../css/Header.css'; // Подключаем стили для Header
+import ProfileIcon from "../images/account.png"
 
 function Header({ toggleSidebar }) {
     const { isAuth, setIsAuth } = useAuth();
@@ -26,37 +27,49 @@ function Header({ toggleSidebar }) {
 
     return (
         <header className="header">
-            <button className="sidebar-toggle icon-button" onClick={toggleSidebar}>☰</button>
-            <div className="logo">3D-Dashboard</div>
-            <div className="header-buttons">
-                <input type="text" placeholder="Поиск" className="search-bar" />
-                <div className="links">
-                    {isAuth ? (
-                        <>
-                        <Link to="/messengers" className="messenger icon-button header-btn">✉</Link>
-                        <div
-                            className="profile-dropdown"
-                            onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave}
-                        >
-                            <Link to="/profile" className="icon-button header-btn">👤</Link>
-                            {/* Показываем меню, если isOpen === true */}
-                            {isOpen && (
-                                <div className="dropdown-content menu-btn">
-                                    <button onClick={handleLogout}>Выйти</button>
-                                    {/* Другие пункты меню */}
-                                </div>
-                            )}
-                        </div>
-                        </>
-                    ) : (
-                    <>
-                        <Link to="/login" className="auth-button">Войти</Link>
-                        <Link to="/register" className="auth-button">Зарегистрироваться</Link>
-                    </>
-                )}
+            <div className="header-button-theme-toggle header-block-1">
+                <button className="icon-button color-button-sidebar" onClick={toggleSidebar}>☰</button>
+            </div>
+            <div className="header-block-2">
+                <div className="logo">
+                    3D-Dashboard
                 </div>
-                <button className="icon-button" onClick={handleThemeToggle}>🌙</button>
+            </div>
+            <div className="header-block-3">
+                <div className="header-buttons">
+                    <input type="text" placeholder="Поиск" className="search-bar" />
+                    <div className="links">
+                        {isAuth ? (
+                            <>
+                                <Link to="/messengers" className="messenger-margin-right icon-links header-btn">✉</Link>
+                                <div
+                                    className="profile-dropdown"
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+                                    <Link to="/profile" className="icon-links header-btn">
+                                        <img src={ProfileIcon} alt=""/>
+                                    </Link>
+                                    {/* Показываем меню, если isOpen === true */}
+                                    {isOpen && (
+                                        <div className="dropdown-content menu-btn">
+                                            <button onClick={handleLogout}>Выйти</button>
+                                            {/* Другие пункты меню */}
+                                        </div>
+                                    )}
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <Link to="/login" className="auth-button">Войти</Link>
+                                <Link to="/register" className="auth-button">Зарегистрироваться</Link>
+                            </>
+                        )}
+                    </div>
+                </div>
+                <div className="header-button-theme-toggle">
+                    <button className="icon-button color-button-theme" onClick={handleThemeToggle}>🌙</button>
+                </div>
             </div>
         </header>
     );

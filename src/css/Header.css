@@ -1,32 +1,132 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 10px;
     background-color: #222;
     color: #fff;
+    border-radius: 10px;
+}
+/*Первый блок - Кнопка раскрывания Sidebar*/
+.header-block-1 {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 147, 194);
+    color: #fff;
+    border-radius: 10px;
+
+}
+.color-button-sidebar {
+    background-color: rgb(0, 136, 172);
+
+}
+.color-button-theme {
+    background-color: rgb(0, 147, 194);
+
 }
 
-.menu-btn {
-    font-size: 1.5em;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
 
+/*Второй блок - логотип*/
+.header-block-2 {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 147, 194, 30%);
+
+    color: #fff;
+    border-radius: 10px;
+}
 .logo {
-    font-size: 1.5em;
-    margin-left: 0px;
+    font-size: 24px;
+    padding: 25px 30px 25px 30px;
+    margin: 12px;
+    border-radius: 5px;
+    background-color: #444444;
+    color: blue;
 }
 
+
+.header-block-3 {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 147, 194, 30%);
+    color: #fff;
+    border-radius: 10px;
+}
 .search-bar {
-    padding: 5px;
+    padding: 12px;
+    font-size: 14px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 3px;
+
 }
 
 .header-buttons {
     display: flex;
     align-items: center;
+    background-color: rgb(0, 147, 194);
+    border-radius: 10px;
+    margin-left: 10px;
 }
+
+.links {
+    display: flex;
+    justify-content: end;
+    margin-left: 38vw;
+}
+
+.icon-links {
+    background-color: rgb(31, 212, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.icon-links img {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.auth-button {
+    background-color: blue;
+    margin: 18px 15px;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-button-theme-toggle {
+    padding: 10px;
+}
+
+.messenger-margin-right {
+    margin-left: 12.5vw;
+
+}
+
+
+
+
+
+
+
 
 .header-btn {
     display: flex;
@@ -64,22 +164,8 @@
     background-color: #575757;
 }
 
-.links {
-    display: flex;
-    justify-content: end;
-    margin-left: 60vw;
-}
 
-.icon-button {
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
-    margin-left: 10px;
-}
 
-.messenger {
 
-}
+
+

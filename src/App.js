@@ -21,10 +21,12 @@ function App() {
             <BrowserRouter>
                 <div className="App">
                     <Header toggleSidebar={toggleSidebar}/>
-                    <Sidebar isOpen={isSidebarOpen} />
-                    <main>
-                        <AppRoutes />
-                    </main>
+                    <div className="App-Sidebar-main-flex">
+                        <Sidebar isOpen={isSidebarOpen} />
+                        <main>
+                            <AppRoutes />
+                        </main>
+                    </div>
                 </div>
             </BrowserRouter>
         </AuthProvider>

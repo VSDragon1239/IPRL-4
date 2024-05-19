@@ -13,13 +13,13 @@ function Profile() {
                 <p>@userid</p>
             </div>
             <div className="profile-sidebar">
-                <Link to="profile/home" className="profile-sidebar-item">Главная</Link>
-                <Link to="profile/gallery" className="profile-sidebar-item">Галерея</Link>
-                <Link to="profile/projects" className="profile-sidebar-item">Проекты</Link>
-                <Link to="profile/portfolio" className="profile-sidebar-item">Портфолио</Link>
-                <Link to="profile/templates" className="profile-sidebar-item">Шаблоны</Link>
-                <Link to="profile/training" className="profile-sidebar-item">Обучение</Link>
-                <Link to="profile/achievements" className="profile-sidebar-item">Достижения</Link>
+                <Link to="/profile/home" className="profile-sidebar-item">Главная</Link>
+                <Link to="/profile/gallery" className="profile-sidebar-item">Галерея</Link>
+                <Link to="/profile/projects" className="profile-sidebar-item">Проекты</Link>
+                <Link to="/profile/portfolio" className="profile-sidebar-item">Портфолио</Link>
+                <Link to="/profile/templates" className="profile-sidebar-item">Шаблоны</Link>
+                <Link to="/profile/training" className="profile-sidebar-item">Обучение</Link>
+                <Link to="/profile/achievements" className="profile-sidebar-item">Достижения</Link>
             </div>
         </div>
     );
