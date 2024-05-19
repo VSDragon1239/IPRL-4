@@ -8,11 +8,11 @@ import FavoritesImage from "../images/favorites.png"
 function Sidebar({ isOpen }) {
     return (
         <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
-            <NavLink to="/" className="sidebar-item" title="Домой">
+            <NavLink to="/" className="sidebar-item" title="Главная">
                 <div className="image-link-block">
                     <img src={homeImage} alt="Домашняя страница"/>
                 </div>
-                {isOpen && <span>Домой</span>}
+                {isOpen && <span>Главная</span>}
             </NavLink>
 
             <NavLink to={"/favorites"} className="sidebar-item" title="Избранное" >

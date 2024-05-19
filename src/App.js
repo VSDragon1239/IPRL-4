@@ -7,11 +7,8 @@ import Sidebar from './components/Sidebar';
 
 import './css/App.css'; // Подключаем глобальные стили
 
-
-
 function App() {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
